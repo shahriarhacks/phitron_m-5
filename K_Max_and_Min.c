@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    // min
+    if (a <= b && a <= c)
+    {
+        printf("%d ", a);
+    }
+    else if (b <= a && b <= c)
+    {
+        printf("%d ", b);
+    }
+    else
+    {
+        printf("%d ", c);
+    }
+
+    // max
+    if (a >= b && a >= c)
+    {
+        printf("%d", a);
+    }
+    else if (b >= a && b >= c)
+    {
+        printf("%d", b);
+    }
+    else
+    {
+        printf("%d", c);
+    }
+    return 0;
+}
